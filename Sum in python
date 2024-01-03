@@ -1,0 +1,7 @@
+def sum(*arguments):
+    x=0
+    for i in arguments:
+        x = x+i
+    return x
+
+print(sum(7,90,8))
