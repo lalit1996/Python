@@ -1,0 +1,18 @@
+def dataset(List1):
+    List2 = []
+    List3 = []
+    for i in List1:
+        if type(i)==float or type(i)==int:
+            List2.append(i)
+        else: 
+            if type(i)==list:
+                 for e in i:
+                     if type(e)==float or type(e)==int:
+                         List2.append(e)
+    
+    for l in List2:
+        if List2.count(l)>1:
+            List2.remove(l)
+    List2.sort()
+
+    return List2
