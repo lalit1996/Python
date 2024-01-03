@@ -1,0 +1,5 @@
+def unique(set_of_Data):
+    for i in set_of_Data:
+        if set_of_Data.count(i)>1:
+            set_of_Data.remove(i)
+    return set_of_Data
