@@ -1,0 +1,34 @@
+
+def capitalize1(string1):
+    q = 0
+    string2=""
+    for i in string1:
+        if i=="a": string2=string2 + "A"
+        elif i=="b": string2=string2 + "B"
+        elif i=="c": string2=string2 + "C"
+        elif i=="d": string2=string2 + "D"
+        elif i=="e": string2=string2 + "E"
+        elif i=="f": string2=string2 + "F"
+        elif i=="g": string2=string2 + "G"
+        elif i=="h": string2=string2 + "H"
+        elif i=="i": string2=string2 + "I"
+        elif i=="j": string2=string2 + "J"
+        elif i=="k": string2=string2 + "K"
+        elif i=="l": string2=string2 + "L"
+        elif i=="m": string2=string2 + "M"
+        elif i=="n": string2=string2 + "N"
+        elif i=="o": string2=string2 + "O"
+        elif i=="p": string2=string2 + "P"
+        elif i=="q": string2=string2 + "Q"
+        elif i=="r": string2=string2 + "R"
+        elif i=="s": string2=string2 + "S"
+        elif i=="t": string2=string2 + "T"
+        elif i=="u": string2=string2 + "U"
+        elif i=="v": string2=string2 + "V"
+        elif i=="w": string2=string2 + "W"
+        elif i=="x": string2=string2 + "X"
+        elif i=="y": string2=string2 + "Y"
+        elif i=="z": string2=string2 + "Z"
+        q=q+1
+    string1=string2
+    return string1
