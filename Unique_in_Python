@@ -3,3 +3,23 @@ def unique(set_of_Data):
         if set_of_Data.count(i)>1:
             set_of_Data.remove(i)
     return set_of_Data
+
+-----------------------Find repetive values----------------------------
+
+def find_duplicate_value(n):
+    if type(n)==list:
+        e = []
+        for i in n:
+            if n.count(i)>1 and (i not in e):
+                yield i
+                e.append(i)
+
+    else:
+        print("Please provide your data in a list format")
+
+p = [2,4,5,6,8,2,3,1,5]
+for a in find_duplicate_value(p):
+    print(a)
+
+
+
