@@ -1,0 +1,20 @@
+
+class bank_account:
+    def __init__(self,balance):
+        self.__balance = balance
+
+    def deposite(self,balance):
+        self.__balance = self.__balance + balance
+        return self.__balance
+
+    def check_balance(self):
+        return self.__balance
+        
+    def withdraw(self,withdraw_Amount):
+        if self.__balance>=withdraw_Amount:
+            self.__balance = self.__balance - withdraw_Amount
+            return True
+        else:
+            return False
+
+amount = bank_account(7000)   
