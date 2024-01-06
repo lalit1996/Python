@@ -1,0 +1,23 @@
+
+class finding_unique:
+
+    def __init__(self,n):
+        self.n = n
+
+    def find_duplicate_value(self):
+        if type(self.n)==list:
+            e = []
+            for i in self.n:
+                if self.n.count(i)>1 and (i not in e):
+                    e.append(i)
+            return e
+
+        else:
+            print("Please provide your data in a list format")
+    
+    def sum_of_distinct_value(self):
+        return sum(self.find_duplicate_value())
+
+data  = finding_unique([1,2,4,2,33,33,1])
+
+print(data.sum_of_distinct_value())
