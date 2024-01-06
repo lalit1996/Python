@@ -1,0 +1,2 @@
+list1 = ["chiranjivi","Shashi","lalit","chiranjivi"]
+print(list(filter(lambda x: x in "Chiranjivi" , list1)))
