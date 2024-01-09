@@ -1,0 +1,23 @@
+
+def f2(func):
+    def wrapper(*args,**kwargs):
+        print("started")
+        t =[]
+        for arg in args:
+            t.append(arg)
+        if t[0]>t[1]:
+            print(t[0]/t[1])
+        elif t[1]>t[0]:
+            print(t[1]/t[0])
+        else:
+            print(t[1]/t[0])
+        print("Ended")
+    return wrapper
+
+@f2
+def f1(a,b):
+    result = a/b
+    print(result)
+
+
+print(f1(6,5))
