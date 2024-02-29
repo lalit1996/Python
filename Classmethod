@@ -1,0 +1,12 @@
+class employee:
+    company = "Apple"
+    def show(self):
+        print(f"The name is {self.name} and company is {self.company}")
+    @classmethod
+    def changecompany(cls,newcompany):
+        cls.company = newcompany
+
+e1 = employee()
+e1.name = "harry"
+e1.changecompany('tesla')
+print(employee.company)
