@@ -1,0 +1,14 @@
+class anagram_palindrome:
+
+    def is_anagram_palindrome(self,word):
+        self.word = word
+        count_of_word = len(self.word)
+        list_of_letter = []
+        for i in self.word:
+            list_of_letter.append(self.word.count(i))
+        if self.word.upper() == self.word[::-1].upper() :
+            print(True)
+        else:
+            print('Provided word is not palindrome')
+
+anagram_palindrome().is_anagram_palindrome('Nitin')
