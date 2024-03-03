@@ -1,0 +1,33 @@
+import logging
+logging.basicConfig(filename='logfile2.log',level= logging.NOTSET, format='%(asctime)s %(name)s %(levelname)s %(message)s')
+
+class stringvsinteger:
+    def __init__(self,lst):
+        self.__lst = lst
+
+    def segregate(self):
+        logging.info('segregate function started running')
+        L1 = []
+        logging.info('integer list has been created')
+        L2 = []
+        logging.info('string list has been created')
+        for i in self.__lst:
+            logging.info('list command has been executed')
+            if type(i) == list:
+                logging.info('list under list command is starting')
+                for u in i:
+                    L1.append(u)
+                logging.info('list under list command command completed')
+            elif type(i) == int:
+                L1.append(i)
+                logging.info('list command completed')
+            elif type(i) == str:
+                L2.append(i)
+                logging.info(('string command completed'))
+
+        return L1,L2
+
+
+t1 = stringvsinteger([1,2,4,5,[5,6,7],'subh','kumar'])
+
+print(t1.segregate())
