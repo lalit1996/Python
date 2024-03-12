@@ -5,8 +5,10 @@ L1 = "D://Sales Data.csv"
 O1 = open(L1,'r')
 O2 = O1.read()
 try:
-    print(O2)
+    print(O1)
 except Exception as Exception_Name:
     print(Exception_Name)
 else: #it will work only if try block successfully run
-    pandas.DataFrame()
+    print("Data_Analysis")
+finally: #i will execute always
+    print("Bhang")
