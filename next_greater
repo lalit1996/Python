@@ -1,0 +1,15 @@
+list = [71,52,74,67,66,75,566,258,630]
+c = 1
+
+
+for a in list:
+       d = 1
+       for b in list[c:]:
+           m = b
+           if b>a:
+               e =d
+               c = c + 1
+               print(e)
+               break
+           else:
+                d=d+1
